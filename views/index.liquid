@@ -1,13 +1,23 @@
 {% render 'partials/head.liquid' %}
 
-<article>
-  <header>
-    <h1>yo</h1>
-   <p>{{ person.name }}</p>
-  </header>
+<article class="profile-card">
+  <div class="image-container">
+    <img src="img2.jpg" alt="Achtergrond" class="background">
+    <img src="img1.jpg" alt="Profielfoto" class="profile">
+  </div>
 
+  <section class="content">
 
-  <footer></footer>
+    <h1>{{ person.name }}</h1>
+    <p>{{ person.bio }}</p>
+  </section>
+
+  <div class="button-group">
+    <button>Gaming</button>
+    <button>Reizen</button>
+    <button>Sporten</button>
+    <button>Kung Fu</button>
+  </div>
 </article>
 
 {% render 'partials/foot.liquid' %}

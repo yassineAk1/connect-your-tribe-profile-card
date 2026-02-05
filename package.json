@@ -7,9 +7,10 @@
   "directories": {
     "doc": "docs"
   },
-  "scripts": {
-    "start": "nodemon server.js"
-  },
+"scripts": {
+  "start": "nodemon server.js",
+  "dev": "browser-sync start --proxy localhost:8000 --files '**/*.liquid, **/*.css, **/*.js'"
+},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/fdnd-task/connect-your-tribe-profile-card.git"
@@ -30,6 +31,7 @@
     "liquidjs": "latest"
   },
   "devDependencies": {
+    "browser-sync": "^3.0.4",
     "nodemon": "^3.1.11"
   }
 }

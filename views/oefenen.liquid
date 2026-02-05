@@ -1,0 +1,10 @@
+
+{% render 'partials/head.liquid' %}
+
+<h1>Data-Driven Web</h1>
+<p>Ik ben dus {{ person.name }}</p>
+<p>Het is vandaag {{ 'now' | date: "%Y-%m-%d %H:%M" }}</p>
+<p> volg mijn github  {{ person.github_handle }}
+<p>ik kom uit {{ person.custom.woonplaats }}</p>
+
+{% comment %} <pre>{{ person | json }}</pre> {% endcomment %}
